@@ -39,7 +39,7 @@ items:
         name: hello-java-spring-boot
       spec:
         containers:
-        - image: monodot/hello-java-spring-boot:latest
+        - image: onurkaratas/springhelloworld:latest
           imagePullPolicy: IfNotPresent
           name: hello-java-spring-boot
           env:
