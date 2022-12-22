@@ -8,6 +8,6 @@ RUN mvn install
 FROM openjdk:11-jre-slim
 WORKDIR /app
 COPY --from=build /app/target/hello-java-spring-boot-*.jar /app/app.jar
-EXPOSE 8080
+EXPOSE 8081
 ENTRYPOINT ["sh", "-c"]
 CMD ["java -jar app.jar"]
